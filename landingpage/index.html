@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toko Roti Gembong Gembul | Roti Gembong Lembut Isi Melimpah</title>
+    <meta
+      name="description"
+      content="Toko Roti Gembong Gembul menyediakan roti gembong lembut dengan isian melimpah, banyak varian rasa, paket hemat, dan pemesanan mudah via WhatsApp."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="Toko Roti Gembong Gembul">
+        <span class="logo-badge logo-badge-small" aria-hidden="true">
+          <span class="logo-bread">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="logo-label">Roti</span>
+          <span class="logo-title">GG</span>
+        </span>
+        <span>
+          <strong>Gembong Gembul</strong>
+          <small>Fresh baked daily</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <a href="#menu">Menu</a>
+        <a href="#promo">Promo</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-order" data-wa="Saya ingin pesan roti gembong." href="#">Pesan</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-copy">
+          <div class="logo-badge hero-logo" aria-label="Logo Roti Gembong Gembul">
+            <span class="logo-bread">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="logo-label">Roti Gembong</span>
+            <span class="logo-title">Gembul</span>
+          </div>
+          <p class="eyebrow">Toko roti rumahan rasa juara</p>
+          <h1>Toko Roti Gembong Gembul</h1>
+          <p class="hero-text">
+            Roti gembong lembut, isi melimpah, dan dipanggang fresh untuk sarapan,
+            oleh-oleh, acara kantor, sampai hampers keluarga.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" data-wa="Saya ingin pesan roti gembong." href="#">Pesan Sekarang</a>
+            <a class="button secondary" href="#menu">Lihat Menu</a>
+          </div>
+          <div class="hero-highlights" aria-label="Keunggulan toko">
+            <span>Fresh baked</span>
+            <span>Banyak varian</span>
+            <span>Bisa pre-order</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Ilustrasi roti sobek gembong dengan topping melimpah">
+          <div class="bread-scene">
+            <div class="bread-sobek">
+              <span class="bun bun-one"></span>
+              <span class="bun bun-two"></span>
+              <span class="bun bun-three"></span>
+              <span class="bun bun-four"></span>
+              <span class="bun bun-five"></span>
+              <span class="bun bun-six"></span>
+              <span class="topping topping-choco"></span>
+              <span class="topping topping-cheese"></span>
+              <span class="topping topping-crumbs"></span>
+              <span class="topping topping-cream"></span>
+            </div>
+            <div class="plate"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact" aria-label="Ringkasan layanan">
+        <div class="stats-grid">
+          <div>
+            <strong>8+</strong>
+            <span>Varian rasa</span>
+          </div>
+          <div>
+            <strong>30 menit</strong>
+            <span>Estimasi pickup</span>
+          </div>
+          <div>
+            <strong>Harian</strong>
+            <span>Produksi fresh</span>
+          </div>
+          <div>
+            <strong>WA</strong>
+            <span>Order cepat</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Menu favorit</p>
+          <h2>Pilih roti gembongmu</h2>
+          <p>Katalog ringkas dengan harga, status, dan tombol pesan langsung.</p>
+        </div>
+
+        <div class="filter-bar" aria-label="Filter kategori produk">
+          <button class="filter-chip active" type="button" data-filter="Semua">Semua</button>
+          <button class="filter-chip" type="button" data-filter="Original">Original</button>
+          <button class="filter-chip" type="button" data-filter="Manis">Manis</button>
+          <button class="filter-chip" type="button" data-filter="Premium">Premium</button>
+          <button class="filter-chip" type="button" data-filter="Paket">Paket</button>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="section promo-section" id="promo">
+        <div class="section-heading">
+          <p class="eyebrow">Promo dan paket</p>
+          <h2>Lebih hemat untuk rame-rame</h2>
+        </div>
+
+        <div class="promo-grid">
+          <article class="promo-panel">
+            <span class="promo-label">Paket keluarga</span>
+            <h3>Paket Mix 3 Rasa</h3>
+            <p>Cokelat, keju, dan tiramisu dalam satu box. Cocok untuk sarapan atau teman minum teh.</p>
+            <a class="button primary small" data-wa="Saya ingin pesan Paket Mix 3 Rasa." href="#">Pesan Paket</a>
+          </article>
+          <article class="promo-panel accent">
+            <span class="promo-label">Pre-order</span>
+            <h3>Paket Kantor 10 Box</h3>
+            <p>Pesanan jumlah banyak bisa dijadwalkan untuk meeting, training, atau acara komunitas.</p>
+            <a class="button light small" data-wa="Saya ingin konsultasi Paket Kantor 10 Box." href="#">Konsultasi</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="tentang">
+        <div>
+          <p class="eyebrow">Tentang kami</p>
+          <h2>Roti hangat yang dibuat dekat dengan selera keluarga</h2>
+          <p>
+            Gembong Gembul membuat roti gembong dengan tekstur lembut, aroma panggang
+            yang harum, dan isian yang tidak pelit. Setiap batch dibuat segar agar
+            pelanggan mendapat roti yang empuk saat dibawa pulang.
+          </p>
+          <div class="feature-list">
+            <span>Adonan lembut</span>
+            <span>Isian melimpah</span>
+            <span>Paket acara</span>
+          </div>
+        </div>
+        <div class="process-box">
+          <h3>Dari dapur ke meja</h3>
+          <ol>
+            <li>Adonan disiapkan dan difermentasi.</li>
+            <li>Roti dipanggang sampai harum.</li>
+            <li>Isian ditambahkan sesuai pesanan.</li>
+            <li>Roti dikemas rapi untuk pickup atau kirim.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Testimoni</p>
+          <h2>Kata pelanggan</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote>
+            <p>Rotinya empuk banget, cokelatnya banyak, anak-anak langsung minta tambah.</p>
+            <cite>Rani, pelanggan keluarga</cite>
+          </blockquote>
+          <blockquote>
+            <p>Pesan untuk kantor, datang tepat waktu dan masih hangat. Praktis banget.</p>
+            <cite>Dimas, pelanggan kantor</cite>
+          </blockquote>
+          <blockquote>
+            <p>Varian kejunya favorit. Rasanya pas, tidak terlalu manis, kemasannya rapi.</p>
+            <cite>Maya, pelanggan reguler</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section location-section" id="lokasi">
+        <div>
+          <p class="eyebrow">Lokasi dan kontak</p>
+          <h2>Mampir atau pesan dari rumah</h2>
+          <p>Jl. Roti Hangat No. 12, Bandung. Buka setiap hari pukul 08.00-20.00 WIB.</p>
+          <div class="contact-actions">
+            <a class="button primary" data-wa="Halo Toko Roti Gembong Gembul, saya ingin bertanya lokasi dan stok hari ini." href="#">Chat WhatsApp</a>
+            <a class="button secondary" href="https://maps.google.com/?q=Bandung" target="_blank" rel="noreferrer">Buka Maps</a>
+          </div>
+        </div>
+        <div class="map-card" aria-label="Ringkasan lokasi toko">
+          <span>Gembong Gembul</span>
+          <strong>Pickup, pre-order, dan paket acara</strong>
+          <p>Area kirim: sekitar toko dan sesuai konfirmasi admin.</p>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Pertanyaan yang sering muncul</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Apakah bisa pesan untuk acara?</summary>
+            <p>Bisa. Pesanan jumlah banyak sebaiknya pre-order minimal H-1 agar jadwal produksi aman.</p>
+          </details>
+          <details>
+            <summary>Berapa lama roti tahan?</summary>
+            <p>Roti paling nikmat dimakan di hari yang sama. Untuk penyimpanan, tutup rapat dan hangatkan sebentar sebelum dimakan.</p>
+          </details>
+          <details>
+            <summary>Apakah bisa pilih campur rasa?</summary>
+            <p>Bisa untuk paket tertentu. Admin akan membantu konfirmasi pilihan rasa yang tersedia.</p>
+          </details>
+          <details>
+            <summary>Apakah tersedia pengiriman?</summary>
+            <p>Tersedia sesuai area dan jadwal. Biaya kirim dikonfirmasi melalui WhatsApp.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Toko Roti Gembong Gembul</strong>
+        <p>Roti gembong lembut, isi melimpah, dibuat fresh setiap hari.</p>
+      </div>
+      <a class="button primary" data-wa="Halo Toko Roti Gembong Gembul, saya ingin pesan." href="#">Pesan via WhatsApp</a>
+    </footer>
+
+    <dialog class="product-dialog" id="product-dialog">
+      <button class="dialog-close" type="button" aria-label="Tutup detail produk">&times;</button>
+      <div class="dialog-content" id="dialog-content"></div>
+    </dialog>
+
+    <a class="floating-wa" data-wa="Halo Toko Roti Gembong Gembul, saya ingin pesan." href="#" aria-label="Pesan via WhatsApp">
+      WA
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
