@@ -202,7 +202,7 @@ input {
 }
 
 .logo-label {
-  margin-top: 50px;
+  margin-top: 25px;
   color: #ffcf63;
   font-size: 0.86rem;
   font-weight: 950;
@@ -426,7 +426,7 @@ h3 {
 .bread-scene {
   position: relative;
   width: min(100%, 560px);
-  aspect-ratio: 1 / 0.85;
+  aspect-ratio: 1 / 0.85; 
 }
 
 .bread-sobek {
