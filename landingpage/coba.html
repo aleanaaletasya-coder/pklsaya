@@ -1,0 +1,241 @@
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            Lembut, Nikmat, Bikin Nagih
+        </span>
+
+        <h1>
+            Roti Gembong,
+            <span>Sebesar Kebahagiaan,</span>
+            Selembut Kenangan.
+        </h1>
+
+        <p>
+            Nikmati roti lembut dengan berbagai pilihan rasa favorit,
+            dibuat dari bahan berkualitas untuk menemani setiap momen
+            spesialmu.
+        </p>
+
+        <div class="hero-button">
+
+            <a href="#menu" class="btn-primary">
+                Lihat Produk
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="circle"></div>
+
+        <img src="images/hero-roti.png" alt="Roti Gembong">
+
+    </div>
+
+</section>
+
+<style>
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 8%;
+
+    background:linear-gradient(
+    135deg,
+    #FFFDF9,
+    #FFF3DE
+    );
+
+    overflow:hidden;
+}
+    .hero-content{
+
+    width:48%;
+
+}
+.hero-tag{
+
+    color:#B57A36;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+.hero h1{
+
+    margin-top:20px;
+
+    font-size:72px;
+
+    line-height:1.15;
+
+    color:#4F2B15;
+
+}
+
+.hero h1 span{
+
+    display:block;
+
+    color:#C48739;
+
+}
+.hero p{
+
+    margin:30px 0;
+
+    width:90%;
+
+    color:#6F6F6F;
+
+    font-size:18px;
+
+    line-height:30px;
+
+}
+
+.btn-primary{
+
+    display:inline-block;
+
+    padding:18px 40px;
+
+    background:#5D3114;
+
+    color:white;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    background:#7A451D;
+
+}
+.hero-image{
+
+    position:relative;
+
+    width:52%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+.circle{
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    border-radius:50%;
+
+    background:#FFE7BF;
+
+    filter:blur(70px);
+
+    z-index:0;
+
+}
+.hero-image img{
+
+    width:700px;
+
+    position:relative;
+
+    z-index:2;
+
+    filter:drop-shadow(
+    0 35px 40px rgba(0,0,0,.25)
+    );
+
+    animation:float 5s ease-in-out infinite;
+
+}
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+@media(max-width:992px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+padding-top:140px;
+
+}
+
+.hero-content{
+
+width:100%;
+
+}
+
+.hero-image{
+
+width:100%;
+
+margin-bottom:40px;
+
+}
+
+.hero-image img{
+
+width:90%;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+}
+</style>

@@ -2,95 +2,102 @@ const WHATSAPP_NUMBER = "6281234567890";
 
 const products = [
   {
-    name: "Roti Gembong Original",
-    category: "Original",
+    name: "Roti Gedhe Abon Mayo Original",
+    image: "roti-gedhe-abon-mayo-original-1781837534.jpg",
+    category: "Savory",
     price: "Rp15.000",
     status: "Tersedia",
-    desc: "Roti gembong klasik dengan tekstur lembut dan aroma panggang hangat.",
+    desc: "Roti Gedhe Dengan Varian Gurih Bertopping Abon Mayo Yang Lezat",
     detail: "Cocok untuk sarapan, teman kopi, atau bekal keluarga. Porsi 2-3 orang.",
     filling: "#f6d58d",
     breadA: "#f7d789",
     breadB: "#c8681d"
   },
   {
-    name: "Roti Gembong Cokelat",
-    category: "Manis",
+    name: "Roti Gedhe Abon Mayo Pedas",
+    image: "roti-gedhe-abon-mayo-pedas-1781837544.jpg",
+    category: "Spicy",
     price: "Rp18.000",
     status: "Tersedia",
-    desc: "Isian cokelat tebal dengan rasa manis yang pas.",
+    desc: " Roti Gedhe Dengan Varian Gurih Bertopping Abon Mayo Dan Saus Pedas Yang Lezat .",
     detail: "Favorit anak-anak dan pelanggan yang suka roti manis klasik.",
     filling: "#5b2e19",
     breadA: "#f8cf78",
     breadB: "#a84d1c"
   },
   {
-    name: "Roti Gembong Keju",
-    category: "Manis",
+    name: "Roti Gedhe Banana Milk",
+    image: "roti-gedhe-banana-milk-1781837557.jpg",
+    category: "Sweet",
     price: "Rp19.000",
     status: "Tersedia",
-    desc: "Taburan dan isian keju gurih yang berpadu dengan roti empuk.",
+    desc: "Roti Gedhe Yang Lembut Dengan Isian Selai Rasa Rasa Pisang Susu Yang Harum .",
     detail: "Rasa gurih-manis seimbang, cocok untuk oleh-oleh keluarga.",
     filling: "#fff0a8",
     breadA: "#ffe0a0",
     breadB: "#bd681f"
   },
   {
-    name: "Roti Gembong Cokelat Keju",
-    category: "Premium",
+    name: "Roti Gedhe Cappucino",
+    image: "roti-gedhe-cappucino-1781837614.jpg",
+    category: "Sweet",
     price: "Rp22.000",
     status: "Tersedia",
-    desc: "Perpaduan cokelat lembut dan keju gurih dalam satu roti.",
+    desc: "Roti Gedhe Yang Lembut Dengan Topping Cappucino",
     detail: "Pilihan aman untuk dibagi karena rasanya akrab dan disukai banyak orang.",
     filling: "#7a3b1f",
     breadA: "#f8d485",
     breadB: "#b95b20"
   },
   {
-    name: "Roti Gembong Tiramisu",
-    category: "Premium",
+    name: "Roti Gedhe Coklat",
+    image: "roti-gedhe-coklat-1781837625.jpg",
+    category: "Sweet",
     price: "Rp23.000",
     status: "Pre-order",
-    desc: "Krim tiramisu lembut dengan aroma kopi yang ringan.",
+    desc: "Roti Gedhe Yang Lembut Dengan Topping Coklat Lumer Yang Sangat Melimpah .",
     detail: "Disarankan pre-order agar krim disiapkan fresh sesuai jadwal pickup.",
     filling: "#c69c6d",
     breadA: "#f5cb79",
     breadB: "#9f4d1e"
   },
   {
-    name: "Roti Gembong Matcha",
-    category: "Premium",
+    name: "Roti Gedhe Coklat Kacang",
+    image: "roti-gedhe-coklat-kacang-1781837637.jpg",
+    category: "Sweet",
     price: "Rp23.000",
     status: "Pre-order",
-    desc: "Isian matcha creamy dengan sentuhan pahit yang elegan.",
+    desc: "Roti Gedhe Yang Lembut Dengan Topping Coklat Kacang Yang Gurih .",
     detail: "Cocok untuk pelanggan yang suka rasa premium dan tidak terlalu manis.",
     filling: "#2f8d62",
     breadA: "#f4d27d",
     breadB: "#aa5a1c"
   },
   {
-    name: "Roti Gembong Abon",
-    category: "Premium",
+    name: "Roti Gedhe Durian",
+    image: "roti-gedhe-durian-1781838190.jpg",
+    category: "Sweet",
     price: "Rp24.000",
     status: "Tersedia",
-    desc: "Pilihan gurih dengan abon melimpah untuk rasa yang lebih mengenyangkan.",
+    desc: " Roti Gedhe Yang Lembut Dengan Isian Selai Durian Yang Sedap .",
     detail: "Enak untuk sarapan cepat atau bekal perjalanan.",
     filling: "#b46436",
     breadA: "#f4c875",
     breadB: "#a8531c"
   },
   {
-    name: "Paket Mix 3 Rasa",
-    category: "Paket",
+    name: "Roti Gedhe Nucomaltine",
+    image: "roti-gedhe-nucomaltine-1781838213.jpg",
+    category: "Sweet",
     price: "Rp55.000",
     status: "Tersedia",
-    desc: "Tiga rasa favorit dalam satu paket hemat untuk keluarga.",
+    desc: "Roti Gedhe Yang Lembut Dengan Topping Ovomaltine Yang Crunchy.",
     detail: "Isi dapat menyesuaikan stok harian. Cocok untuk acara kecil dan oleh-oleh.",
     filling: "#6c3a1c",
     breadA: "#f8d98b",
     breadB: "#b95b20"
   }
 ];
-
 const productGrid = document.querySelector("#product-grid");
 const dialog = document.querySelector("#product-dialog");
 const dialogContent = document.querySelector("#dialog-content");
@@ -107,7 +114,8 @@ function orderUrl(message) {
 function productArt(product) {
   return `
     <div class="product-art" style="--filling:${product.filling};--bread-a:${product.breadA};--bread-b:${product.breadB};">
-      <div class="mini-bread" role="img" aria-label="${product.name}"></div>
+      <div class="mini-bread">
+       <img src="images/${product.image}" alt="${product.name}">
     </div>
   `;
 }
@@ -118,8 +126,8 @@ function statusClass(status) {
   return "";
 }
 
-function renderProducts(category = "Semua") {
-  const visibleProducts = category === "Semua" ? products : products.filter((item) => item.category === category);
+function renderProducts(category = "All") {
+  const visibleProducts = category === "All" ? products : products.filter((item) => item.category === category);
 
   productGrid.innerHTML = visibleProducts
     .map((product) => {
