@@ -422,7 +422,6 @@ h3 {
   width: min(100%, 560px);
   aspect-ratio: 1 / 0.85; 
   size-adjust: ;
-  overflow: hidden;
 }
 
 .bread-sobek {
@@ -1023,9 +1022,12 @@ details p {
 }
 .glow{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    width: 450px;
-    height: 450px;
+    width: min(450px, 90%);
+    height: min(450px, 90%);
 
     background: radial-gradient(
         circle,
@@ -1101,8 +1103,8 @@ width: 100%;
 
 .glow{
 
-width:300px;
-height:300px;
+width: min(300px, 85%);
+height: min(300px, 85%);
 
 }
 
